@@ -41,17 +41,17 @@ export default function About() {
   return (
     <section
       id="about"
-      className="min-h-screen bg-[#050816] text-white py-16 px-4 sm:py-20 sm:px-6 md:py-24 md:px-10 lg:px-16 relative overflow-hidden flex flex-col items-center"
+      className="min-h-screen bg-[#050816] text-white pt-40 pb-16 px-4 sm:pt-44 sm:pb-20 sm:px-6 md:pt-48 md:pb-24 md:px-10 lg:px-16 relative overflow-hidden flex flex-col items-center scroll-mt-32 lg:scroll-mt-36"
     >
       <div className="absolute top-20 left-20 w-72 h-72 bg-cyan-500/20 blur-[120px] rounded-full"></div>
       <div className="absolute bottom-10 right-10 w-72 h-72 bg-pink-500/20 blur-[120px] rounded-full"></div>
 
-      <div className="relative w-full max-w-6xl">
+      <div className="relative z-10 w-full max-w-6xl">
         <motion.h2
-          initial={{ opacity: 0, y: 60 }}
+          initial={{ opacity: 1, y: 0 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center text-6xl font-black mb-6 bg-gradient-to-r from-cyan-400 via-white to-pink-500 bg-clip-text text-transparent"
+          className="text-center text-4xl sm:text-5xl md:text-6xl font-black mb-6 gradient-heading"
         >
           ✨ About Me ✨
         </motion.h2>

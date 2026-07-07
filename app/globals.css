@@ -71,7 +71,21 @@ a {
   color: #050816;
 }
 
-/* Responsive Typography */
+.gradient-heading {
+  background-image: linear-gradient(to right, #22d3ee, #ffffff, #ec4899);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.gradient-name {
+  background-image: linear-gradient(to right, #67e8f9, #e879f9, #f472b6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
 
 h1 {
   line-height: 1.1;

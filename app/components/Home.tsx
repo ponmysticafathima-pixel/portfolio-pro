@@ -73,7 +73,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 80 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="text-5xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-tight tracking-tight bg-gradient-to-r from-cyan-300 via-fuchsia-400 to-pink-400 bg-clip-text text-transparent drop-shadow-[0_2px_16px_rgba(217,70,239,0.55)]"
+            className="text-5xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-tight tracking-tight gradient-name drop-shadow-[0_2px_16px_rgba(217,70,239,0.55)]"
           >
             Pon Mystica Fathima
           </motion.h1>
