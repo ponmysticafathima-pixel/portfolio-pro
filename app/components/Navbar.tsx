@@ -1,6 +1,8 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
+import { Menu, X } from "lucide-react";
 
 const links = [
   "Home",
@@ -14,27 +16,72 @@ const links = [
 ];
 
 export default function Navbar() {
+  const [open, setOpen] = useState(false);
+
   return (
-    <motion.nav
-      initial={{ y: -80 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.8 }}
-      className="fixed top-4 left-1/2 -translate-x-1/2 z-50
-      bg-white/10 backdrop-blur-xl border border-white/20
-      rounded-full px-8 py-4 shadow-2xl"
-    >
-      <ul className="flex gap-8 text-white font-semibold">
-        {links.map((item) => (
-          <li key={item}>
-            <a
-              href={`#${item.toLowerCase()}`}
-              className="hover:text-cyan-400 transition duration-300 hover:scale-110"
-            >
-              {item}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </motion.nav>
+    <>
+      {/* Desktop Navbar */}
+      <motion.nav
+        initial={{ y: -80 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.7 }}
+        className="hidden lg:flex fixed top-5 left-1/2 -translate-x-1/2 z-50
+        bg-black/30 backdrop-blur-xl border border-cyan-500/20
+        rounded-full px-8 py-4 shadow-2xl"
+      >
+        <ul className="flex items-center gap-8 text-white font-semibold">
+          {links.map((item) => (
+            <li key={item}>
+              <a
+                href={`#${item.toLowerCase()}`}
+                className="hover:text-cyan-400 transition-all duration-300"
+              >
+                {item}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </motion.nav>
+
+      {/* Mobile Navbar */}
+      <div className="lg:hidden fixed top-4 left-4 right-4 z-50">
+
+        <div className="flex items-center justify-between bg-[#0B1120]/90 backdrop-blur-xl border border-cyan-500/30 rounded-2xl px-5 py-4 shadow-xl">
+
+          <h1 className="text-lg font-bold text-cyan-400">
+            Portfolio
+          </h1>
+
+          <button onClick={() => setOpen(!open)}>
+            {open ? (
+              <X className="text-white" size={30} />
+            ) : (
+              <Menu className="text-white" size={30} />
+            )}
+          </button>
+
+        </div>
+
+        {open && (
+          <motion.div
+            initial={{ opacity: 0, y: -15 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="mt-3 rounded-2xl bg-[#0B1120]/95 backdrop-blur-xl border border-cyan-500/30 overflow-hidden"
+          >
+            {links.map((item) => (
+              <a
+                key={item}
+                href={`#${item.toLowerCase()}`}
+                onClick={() => setOpen(false)}
+                className="block px-6 py-4 text-white hover:bg-cyan-500/20 hover:text-cyan-400 transition"
+              >
+                {item}
+              </a>
+            ))}
+          </motion.div>
+        )}
+
+      </div>
+    </>
   );
 }
