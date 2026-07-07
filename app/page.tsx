@@ -9,10 +9,14 @@ import Achievements from "./components/Achievements";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import CursorGlow from "./components/CursorGlow";
+import ParticlesBg from "./components/ParticlesBg";
+import ScrollProgress from "./components/ScrollProgress";
 
 export default function Page() {
   return (
     <>
+      <ScrollProgress />
+      <ParticlesBg />
       <CursorGlow />
       <Navbar />
       <Home />
