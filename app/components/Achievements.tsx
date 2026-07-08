@@ -13,7 +13,7 @@ export default function Achievements() {
   return (
     <section
       id="achievements"
-      className="min-h-screen bg-[#050816] text-white pt-40 pb-16 px-4 sm:pt-44 sm:pb-20 sm:px-6 md:pt-48 md:pb-24 md:px-10 lg:px-16 relative overflow-hidden flex flex-col items-center scroll-mt-32 lg:scroll-mt-36"
+      className="min-h-screen bg-[#050816] text-white pt-52 pb-16 px-4 sm:pt-56 sm:pb-20 sm:px-6 md:pt-60 md:pb-24 md:px-10 lg:px-16 relative overflow-hidden flex flex-col items-center scroll-mt-40 lg:scroll-mt-44"
     >
       <div className="absolute top-10 right-10 w-72 h-72 bg-yellow-400/10 blur-[130px] rounded-full"></div>
       <div className="absolute bottom-10 left-10 w-72 h-72 bg-purple-500/20 blur-[130px] rounded-full"></div>

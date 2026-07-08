@@ -13,7 +13,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="min-h-screen bg-[#050816] text-white pt-32 pb-16 px-4 sm:pt-36 sm:pb-20 sm:px-6 md:pt-40 md:pb-24 md:px-10 lg:px-16 flex items-center justify-center relative overflow-hidden scroll-mt-32 lg:scroll-mt-36"
+      className="min-h-screen bg-[#050816] text-white pt-52 pb-16 px-4 sm:pt-56 sm:pb-20 sm:px-6 md:pt-60 md:pb-24 md:px-10 lg:px-16 flex items-center justify-center relative overflow-hidden scroll-mt-40 lg:scroll-mt-44"
     >
       <div className="absolute top-10 left-10 w-72 h-72 bg-cyan-500/20 blur-[130px] rounded-full"></div>
       <div className="absolute bottom-10 right-10 w-72 h-72 bg-pink-500/20 blur-[130px] rounded-full"></div>
