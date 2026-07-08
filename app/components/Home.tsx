@@ -26,7 +26,7 @@ export default function Home() {
         <motion.div
           animate={{ y: [0, -16, 0] }}
           transition={{ repeat: Infinity, duration: 3 }}
-          className="hidden sm:block absolute -top-8 -left-6 md:-top-10 md:-left-10 text-4xl z-20"
+          className="absolute -top-5 -left-2 sm:-top-8 sm:-left-6 md:-top-10 md:-left-10 text-2xl sm:text-4xl z-20"
         >
           🚀
         </motion.div>
@@ -34,7 +34,7 @@ export default function Home() {
         <motion.div
           animate={{ y: [0, 16, 0] }}
           transition={{ repeat: Infinity, duration: 4 }}
-          className="hidden sm:block absolute -bottom-8 -left-6 md:-bottom-10 md:-left-10 text-4xl z-20"
+          className="absolute -bottom-5 -left-2 sm:-bottom-8 sm:-left-6 md:-bottom-10 md:-left-10 text-2xl sm:text-4xl z-20"
         >
           💻
         </motion.div>
@@ -42,7 +42,7 @@ export default function Home() {
         <motion.div
           animate={{ y: [0, -16, 0] }}
           transition={{ repeat: Infinity, duration: 3 }}
-          className="hidden sm:block absolute -top-8 -right-6 md:-top-10 md:-right-10 text-4xl z-20"
+          className="absolute -top-5 -right-2 sm:-top-8 sm:-right-6 md:-top-10 md:-right-10 text-2xl sm:text-4xl z-20"
         >
           📊
         </motion.div>
@@ -50,9 +50,9 @@ export default function Home() {
         <motion.div
           animate={{ rotate: 360 }}
           transition={{ repeat: Infinity, duration: 12 }}
-          className="hidden sm:block absolute -bottom-8 -right-6 md:-bottom-10 md:-right-10 z-20"
+          className="absolute -bottom-5 -right-2 sm:-bottom-8 sm:-right-6 md:-bottom-10 md:-right-10 z-20"
         >
-          <Sparkles className="text-yellow-300 w-12 h-12" />
+          <Sparkles className="text-yellow-300 w-7 h-7 sm:w-12 sm:h-12" />
         </motion.div>
 
         <motion.div
