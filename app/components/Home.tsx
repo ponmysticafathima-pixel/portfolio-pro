@@ -22,11 +22,11 @@ export default function Home() {
         <div className="absolute top-1/2 left-1/2 w-80 h-80 bg-purple-500/20 rounded-full blur-[150px] -translate-x-1/2 -translate-y-1/2 animate-pulse"></div>
       </div>
 
-      <div className="relative w-full max-w-5xl mx-14 sm:mx-6 md:mx-4 flex items-center justify-center">
+      <div className="relative w-full max-w-5xl mx-16 sm:mx-8 md:mx-4 flex items-center justify-center">
         <motion.div
           animate={{ y: [0, -16, 0] }}
           transition={{ repeat: Infinity, duration: 3 }}
-          className="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 text-xl sm:text-4xl z-20"
+          className="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 text-lg sm:text-4xl z-20"
         >
           🚀
         </motion.div>
@@ -34,7 +34,7 @@ export default function Home() {
         <motion.div
           animate={{ y: [0, 16, 0] }}
           transition={{ repeat: Infinity, duration: 4 }}
-          className="absolute bottom-0 left-0 -translate-x-1/2 translate-y-1/2 text-xl sm:text-4xl z-20"
+          className="absolute bottom-0 left-0 -translate-x-1/2 translate-y-1/2 text-lg sm:text-4xl z-20"
         >
           💻
         </motion.div>
@@ -42,7 +42,7 @@ export default function Home() {
         <motion.div
           animate={{ y: [0, -16, 0] }}
           transition={{ repeat: Infinity, duration: 3 }}
-          className="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 text-xl sm:text-4xl z-20"
+          className="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 text-lg sm:text-4xl z-20"
         >
           📊
         </motion.div>
@@ -52,14 +52,14 @@ export default function Home() {
           transition={{ repeat: Infinity, duration: 12 }}
           className="absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2 z-20"
         >
-          <Sparkles className="text-yellow-300 w-6 h-6 sm:w-12 sm:h-12" />
+          <Sparkles className="text-yellow-300 w-5 h-5 sm:w-12 sm:h-12" />
         </motion.div>
 
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
-          className="relative z-10 backdrop-blur-3xl bg-white/10 border border-white/20 rounded-[40px] px-5 py-8 sm:px-8 sm:py-12 md:px-12 md:py-16 shadow-[0_0_60px_rgba(0,255,255,0.3)] text-center w-full"
+          className="relative z-10 backdrop-blur-3xl bg-white/10 border border-white/20 rounded-[40px] px-4 py-8 sm:px-8 sm:py-12 md:px-12 md:py-16 shadow-[0_0_60px_rgba(0,255,255,0.3)] text-center w-full overflow-hidden"
         >
           <motion.div
             animate={{ rotate: [0, 10, -10, 0] }}
@@ -73,12 +73,12 @@ export default function Home() {
             initial={{ opacity: 0, y: 80 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="text-5xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-tight tracking-tight gradient-name drop-shadow-[0_2px_16px_rgba(217,70,239,0.55)]"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-tight tracking-tight gradient-name drop-shadow-[0_2px_16px_rgba(217,70,239,0.55)]"
           >
             Pon Mystica Fathima
           </motion.h1>
 
-          <div className="mt-6 text-3xl font-bold text-cyan-300">
+          <div className="mt-6 text-xl sm:text-3xl font-bold text-cyan-300 whitespace-normal break-words px-2">
             <TypeAnimation
               sequence={[
                 "Aspiring Data Analyst 📊",
