@@ -22,27 +22,27 @@ export default function Home() {
         <div className="absolute top-1/2 left-1/2 w-80 h-80 bg-purple-500/20 rounded-full blur-[150px] -translate-x-1/2 -translate-y-1/2 animate-pulse"></div>
       </div>
 
-      <div className="relative w-full max-w-5xl mx-16 sm:mx-8 md:mx-4 flex items-center justify-center">
+      <div className="relative w-full max-w-5xl mx-6 sm:mx-8 md:mx-4 flex items-center justify-center">
         <motion.div
-          animate={{ y: [0, -16, 0] }}
+          animate={{ y: [0, -12, 0] }}
           transition={{ repeat: Infinity, duration: 3 }}
-          className="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 text-lg sm:text-4xl z-20"
+          className="absolute top-1 left-1 sm:-top-8 sm:-left-6 md:-top-10 md:-left-10 text-base sm:text-4xl z-20"
         >
           🚀
         </motion.div>
 
         <motion.div
-          animate={{ y: [0, 16, 0] }}
+          animate={{ y: [0, 12, 0] }}
           transition={{ repeat: Infinity, duration: 4 }}
-          className="absolute bottom-0 left-0 -translate-x-1/2 translate-y-1/2 text-lg sm:text-4xl z-20"
+          className="absolute bottom-1 left-1 sm:-bottom-8 sm:-left-6 md:-bottom-10 md:-left-10 text-base sm:text-4xl z-20"
         >
           💻
         </motion.div>
 
         <motion.div
-          animate={{ y: [0, -16, 0] }}
+          animate={{ y: [0, -12, 0] }}
           transition={{ repeat: Infinity, duration: 3 }}
-          className="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 text-lg sm:text-4xl z-20"
+          className="absolute top-1 right-1 sm:-top-8 sm:-right-6 md:-top-10 md:-right-10 text-base sm:text-4xl z-20"
         >
           📊
         </motion.div>
@@ -50,9 +50,9 @@ export default function Home() {
         <motion.div
           animate={{ rotate: 360 }}
           transition={{ repeat: Infinity, duration: 12 }}
-          className="absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2 z-20"
+          className="absolute bottom-1 right-1 sm:-bottom-8 sm:-right-6 md:-bottom-10 md:-right-10 z-20"
         >
-          <Sparkles className="text-yellow-300 w-5 h-5 sm:w-12 sm:h-12" />
+          <Sparkles className="text-yellow-300 w-4 h-4 sm:w-12 sm:h-12" />
         </motion.div>
 
         <motion.div
